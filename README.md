@@ -1,3 +1,6 @@
+Here is the raw text formatted so you can easily copy and paste it directly into your `README.md` file:
+
+```markdown
 # 🚗 Automobile Analytics & Business Advisor
 
 An interactive, full-stack data analytics dashboard and business intelligence tool built to analyze vehicle market trends, depreciation curves, condition penalties, and regional pricing dynamics. 
@@ -50,3 +53,54 @@ automobile-analytics-app/
 ├── cleaned_automobile_dataset_2.csv # Processed Automobile Dataset
 ├── requirements.txt           # Python Dependencies
 └── README.md                  # Project Documentation
+
+```
+
+---
+
+## ⚡ Local Installation & Setup
+
+### 1. Backend Setup (FastAPI)
+
+```bash
+# Clone the repository
+git clone [https://github.com/Pratap338/automobile-analytics-app.git](https://github.com/Pratap338/automobile-analytics-app.git)
+cd automobile-analytics-app
+
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Run the backend API server
+uvicorn main:app --reload
+
+```
+
+*The API server will run at `http://127.0.0.1:8000`.*
+
+### 2. Frontend Setup (React)
+
+```bash
+# Navigate to the frontend folder
+cd frontend
+
+# Install Node dependencies
+npm install
+
+# Start the React application
+npm start
+
+```
+
+*The dashboard will run at `http://localhost:3000`.*
+
+---
+
+## 📬 API Endpoints
+
+* `GET /api/inventory` — Returns full vehicle inventory list.
+* `GET /api/insights` — Returns computed statistical metrics for chart visualizers.
+* `POST /api/advice` — Receives vehicle parameters and returns tailored AI business strategy advice.
+
+```
+
+```
